@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/application_background">
+
+    <include layout="@layout/action_bar"/>
+
+    <TextView
+        android:id="@+id/credits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/developed_by_karpo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/mainMenuGamesBtn"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/button"
+        android:text="@string/games"
+        android:textAllCaps="false"
+        android:textColor="@color/button_text"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="80dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="80dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="80dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="80dp" />
+
+    <Button
+        android:id="@+id/mainMenuMoviesBtn"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/button"
+        android:text="@string/movies"
+        android:textAllCaps="false"
+        android:textColor="@color/button_text"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/mainMenuGamesBtn" />
+
+    <Button
+        android:id="@+id/mainMenuShowsBtn"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/button"
+        android:text="@string/shows"
+        android:textAllCaps="false"
+        android:textColor="@color/button_text"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/mainMenuMoviesBtn" />
+
+    <Button
+        android:id="@+id/mainMenuAppInformationBtn"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/app_information_main_menu_button"
+        android:text="@string/app_information"
+        android:textAllCaps="false"
+        android:textColor="@color/app_information_button_text"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/mainMenuLoginBtn" />
+
+    <Button
+        android:id="@+id/mainMenuLoginBtn"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/login_main_menu_button"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textColor="@color/login_button_text"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/mainMenuShowsBtn" />
+
+
+    <Button
+        android:id="@+id/mainMenuExitButton"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/exit_main_menu_button"
+        android:text="@string/exit"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="@+id/guideline4" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,85 @@
+<resources>
+    <!--general strings-->
+    <string name="app_name">My Lists</string>
+    <string name="developed_by_karpo">Developed by Karpo</string>
+    <string name="activity_string_name">activity_string_name</string>
+    <string name="item_name">Item Name</string>
+    <string name="type_here">Type Here</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="app_information">App Information</string>
+    <string name="exit">Exit</string>
+    <string name="none">None</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="that_username_is_taken">Username is taken!</string>
+    <string name="that_username_is_not_valid">Username is not valid! Please avoid using special characters</string>
+    <string name="username_doesn_t_exist">Username doesn\'t exist!</string>
+    <string name="this_field_is_empty">Field is empty!</string>
+    <string name="password_is_incorrect">Password is incorrect!</string>
+    <string name="status_offline">Status: Offline</string>
+    <string name="password_cannot_contain_any_spaces">Password cannot contain any spaces!</string>
+    <string name="logged_in">logged_in</string>
+    <string name="online">Online:&#160;</string>
+    <string name="offline">Offline</string>
+    <string name="logged_out">logged_out</string>
+
+    <!--Main_menu-->
+    <string name="games">Games</string>
+    <string name="movies">Movies</string>
+    <string name="shows">Shows</string>
+
+    <!--Games and Movies and Shows menu strings-->
+    <string-array name="games_menu_button_strings">
+        <item>Games_I$ve_Finished</item>
+        <item>Games_I_Need_To_Play</item>
+        <item>Games_I_Need_To_Play_Again</item>
+        <item>Favorite_Games</item>
+        <item>Games_Suggestions</item>
+    </string-array>
+
+    <string-array name="movies_menu_button_strings">
+        <item>Movies_I$ve_Watched</item>
+        <item>Movies_I_Need_To_Watch</item>
+        <item>Movies_I_Need_To_Rewatch</item>
+        <item>Favorite_Movies</item>
+        <item>Movies_Suggestions</item>
+    </string-array>
+
+    <string-array name="shows_menu_button_strings">
+        <item>Shows_I$ve_Finished</item>
+        <item>Shows_I_Need_To_Watch</item>
+        <item>Shows_I_Need_To_Rewatch</item>
+        <item>Favorite_Shows</item>
+        <item>Shows_Suggestions</item>
+        <item>Shows_That_Are_Not_Over_Yet</item>
+    </string-array>
+
+    <!--Dialog strings-->
+    <string name="add_item_dialog">add_item_dialog</string>
+    <string name="add_series_dialog">add_series_dialog</string>
+    <string name="clear_all_dialog">clear_all_dialog</string>
+    <string name="edit_item_dialog">edit_item_dialog</string>
+    <string name="are_you_sure_you_want_to_delete_dialog">are_you_sure_you_want_to_delete_dialog</string>
+
+    <!--Dialog Title strings-->
+    <string name="add_item_dialog_title">Add A New Item</string>
+    <string name="add_series_dialog_title">Add A New Series</string>
+    <string name="clear_all_dialog_title">Clear All?</string>
+    <string name="edit_item_dialog_title">Edit or Delete Item</string>
+    <string name="are_you_sure_you_want_to_delete_dialog_title">You\'re Sure You Want To Delete</string>
+
+
+    <!--Series stuff-->
+    <string name="series_list_placeholder">-Select Series-</string>
+    <string name="series_edit_item_list_placeholder">None</string>
+    <string name="series_edit_item_dialog">Series:</string>
+    <string name="index_in_series_edit_item_dialog">Index In Series:</string>
+    <string name="belongs_to_series">Belongs to:</string>
+    <string name="apply_items_series_info_button">Apply Item\'s Info</string>
+    <string name="reset_items_series_info_button">Reset Series Info</string>
+    <string name="series">Series</string>
+
+
+</resources>

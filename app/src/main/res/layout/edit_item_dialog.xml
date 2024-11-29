@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp">
+
+    <EditText
+        android:hint=""
+        android:id="@+id/editItemEdtTxtDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="item_to_edit_or_delete"
+        android:inputType="text"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/series_edit_item_dialog"
+        android:id="@+id/seriesTextViewEditItemDialog"
+        android:layout_below="@id/editItemEdtTxtDialog"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:textColor="@color/series_text_edit_item_dialog"/>
+
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seriesTextViewEditItemDialog"
+        android:id="@+id/seriesSpinnerEditItemDialog"
+        android:layout_alignStart="@id/seriesTextViewEditItemDialog"
+        android:layout_marginStart="-6dp"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seriesIndexSpinnerEditItemDialog"
+        android:layout_below="@id/seriesTextViewEditItemDialog"
+        android:layout_alignEnd="@id/editItemEdtTxtDialog"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/belongsToSeriesTxtViewEditItemDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seriesSpinnerEditItemDialog"
+        android:layout_marginTop="10dp"
+        android:text="@string/belongs_to_series"
+        android:textColor="@color/series_text_edit_item_dialog"
+        android:textSize="14sp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="placeholder"
+        android:textColor="@color/black"
+        android:id="@+id/theSeriesItBelongsToTxtViewEditItemDialog"
+        android:textSize="18sp"
+        android:layout_toEndOf="@id/belongsToSeriesTxtViewEditItemDialog"
+        android:layout_below="@+id/seriesSpinnerEditItemDialog"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/seriesEndingOfSeriesNameTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seriesSpinnerEditItemDialog"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/theSeriesItBelongsToTxtViewEditItemDialog"
+        android:text="@string/series"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:visibility="gone"/>
+
+
+    <TextView
+        android:id="@+id/seriesIndexTxtViewEditItemDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/theSeriesItBelongsToTxtViewEditItemDialog"
+        android:layout_marginTop="10dp"
+        android:text="@string/index_in_series_edit_item_dialog"
+        android:textColor="@color/series_text_edit_item_dialog"
+        android:textSize="14sp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seriesIndexTxtViewEditItemDialogActualIndex"
+        android:layout_below="@+id/theSeriesItBelongsToTxtViewEditItemDialog"
+        android:layout_toEndOf="@id/seriesIndexTxtViewEditItemDialog"
+        android:layout_marginStart="10dp"
+        android:text="0"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        android:textSize="19sp"
+        android:visibility="gone"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/applyItemsSeriesInfoButtonEditItemDialog"
+        android:layout_below="@id/seriesIndexTxtViewEditItemDialog"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/apply_items_series_info_button"
+        android:textColor="@color/black"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:id="@+id/resetItemsSeriesInfoButtonEditItemDialog"
+        android:layout_below="@id/applyItemsSeriesInfoButtonEditItemDialog"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="@string/reset_items_series_info_button"
+        android:textColor="@color/series_text_edit_item_dialog"
+        android:backgroundTint="@color/reset_items_series_info_button"
+        android:textAllCaps="false"/>
+
+
+
+</RelativeLayout>
